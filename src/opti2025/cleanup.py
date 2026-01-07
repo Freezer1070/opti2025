@@ -142,7 +142,7 @@ def restore_latest_backup() -> CleanupResult:
                 destination.mkdir(parents=True, exist_ok=True)
             except OSError as exc:
                 skipped += 1
-                errors.append(f\"Impossible de recréer {destination}: {exc}\")
+                errors.append(f\"Impossible de recréer {destination}: {exc}")
                 continue
 
         for entry in source_root.iterdir():
