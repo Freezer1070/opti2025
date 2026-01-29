@@ -15,7 +15,7 @@ if errorlevel 1 (
   exit /b 1
 )
 
-dotnet publish "%PROJECT_DIR%\OmniPlayer2026.csproj" -c Release -r win-x64 -p:PublishSingleFile=true -p:SelfContained=true
+dotnet publish "%PROJECT_DIR%\OmniPlayer2026.csproj" -c Release -r win-x64 -p:PublishSingleFile=false -p:SelfContained=true
 if errorlevel 1 (
   echo Publish failed.
   exit /b 1
